@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;
 
-        if(requestCode == 1) {
+        if(resultCode == 1) {
             newTaskTitle = data.getStringExtra(getString(R.string.task_title));
             newTaskDescription = data.getStringExtra(getString(R.string.task_description));
 
