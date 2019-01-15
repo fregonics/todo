@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f135aa28121e560d113b4440987f9d3e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/175b5e6226bab9acbaa6d23ff8068223/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0cfd3edeaf03ee010e8e5cf0e46d3194/AndroidManifest.xml:17:1-22:12
@@ -12,6 +13,7 @@ MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gr
 MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/0ca01abdb01715aaed1514147c328479/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/a0f4eaedc2304d2bfb5e5bc1d599d3a4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45cfd73d81659c610c6728417a588d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d9dddf77dbbd15f92949a3737b37c5b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1ab882a56133435296faae23b2fe32c0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6a8b2dc99a4c1f927aefc62749acd376/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/c5992acb96d1ee84f8fbb0b3ea7c3428/AndroidManifest.xml:17:1-22:12
@@ -23,6 +25,7 @@ MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/
 MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/45d626184bc56debb5245c1b004fac38/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/59b2ea14b26658a9eddc36e6061e9af9/AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/80af658596a57add24142f46cb706cac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/538b713f49082ef324fcc659727b380e/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0d516b4bb367987b34091363d60ebe2f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/50aea76eace9d6df38394516ce21d2ab/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/b65b984595ebcb13df1e5f56f0216a38/AndroidManifest.xml:17:1-22:12
@@ -32,25 +35,27 @@ MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/07e7ccfd6bf33d47ba646c92604a91cc/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/89f52d2b65b68694f954e6cf0c3a9586/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c0e5cd5d1708a759c6e502535ba44cb3/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/175b5e6226bab9acbaa6d23ff8068223/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/175b5e6226bab9acbaa6d23ff8068223/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/45d626184bc56debb5245c1b004fac38/AndroidManifest.xml:22:5-94
@@ -85,10 +90,18 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.github.fregonics.todo.NewTaskActivity
+ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:19:9-21:20
+	android:parentActivityName
+		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:19:51-93
+	android:name
+		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:19:19-50
 uses-sdk
 INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
 INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f135aa28121e560d113b4440987f9d3e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f135aa28121e560d113b4440987f9d3e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/175b5e6226bab9acbaa6d23ff8068223/AndroidManifest.xml:5:5-7:41
@@ -105,6 +118,8 @@ MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/c
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/a0f4eaedc2304d2bfb5e5bc1d599d3a4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45cfd73d81659c610c6728417a588d8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45cfd73d81659c610c6728417a588d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d9dddf77dbbd15f92949a3737b37c5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d9dddf77dbbd15f92949a3737b37c5b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1ab882a56133435296faae23b2fe32c0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1ab882a56133435296faae23b2fe32c0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6a8b2dc99a4c1f927aefc62749acd376/AndroidManifest.xml:20:5-44
@@ -127,6 +142,8 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/59b2ea14b26658a9eddc36e6061e9af9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/80af658596a57add24142f46cb706cac/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/80af658596a57add24142f46cb706cac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/538b713f49082ef324fcc659727b380e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/538b713f49082ef324fcc659727b380e/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0d516b4bb367987b34091363d60ebe2f/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0d516b4bb367987b34091363d60ebe2f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/50aea76eace9d6df38394516ce21d2ab/AndroidManifest.xml:20:5-44

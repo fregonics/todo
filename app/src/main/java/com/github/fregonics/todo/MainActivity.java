@@ -1,6 +1,9 @@
 package com.github.fregonics.todo;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mListOfTasks;
     private RecyclerView.LayoutManager mListOfTasksLayoutManager;
     private RecyclerView.Adapter mListOfTasksAdapter;
+    private FloatingActionButton mFloatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +34,40 @@ public class MainActivity extends AppCompatActivity {
         mListOfTasksAdapter = new ListOfTasksAdapter(main);
         mListOfTasks.setAdapter(mListOfTasksAdapter);
 
+        mFloatingActionButton = findViewById(R.id.fab_new_task);
+        mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callNewTaskActivity();
+            }
+        });
 
-        setTestTasks();
+
+        //setTestTasks();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        String newTaskTitle, newTaskDescription;
+
+        if(requestCode == 1) {
+            newTaskTitle = data.getStringExtra(getString(R.string.task_title));
+            newTaskDescription = data.getStringExtra(getString(R.string.task_description));
+
+            if(newTaskDescription != "")
+                main.addTask(newTaskTitle,newTaskDescription);
+            else
+                main.addTask(newTaskTitle);
+
+            final String TAG = "TESTE";
+            Log.d(TAG, "NOVO MEMBRO ADICIONADO " + main.getNumberOfTasks());
+        }
+    }
+
+    void callNewTaskActivity() {
+        Intent intent = new Intent(this, NewTaskActivity.class);
+        startActivityForResult(intent,1);
     }
 
     class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.TaskViewHolder> {
@@ -78,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+    /*
     void setTestTasks() {
         int i;
         String titles;
@@ -86,5 +122,5 @@ public class MainActivity extends AppCompatActivity {
             titles = "teste" + i;
             main.addTask(titles);
         }
-    }
+    }*/
 }
