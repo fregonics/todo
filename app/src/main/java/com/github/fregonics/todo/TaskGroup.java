@@ -1,14 +1,22 @@
 package com.github.fregonics.todo;
 
+import android.annotation.TargetApi;
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 
-public class TaskGroup {
+public class TaskGroup implements Parcelable {
     String name;
     private ArrayList<Task> tasks;
 
     public TaskGroup(String name) {
         this.name = name;
         tasks = new ArrayList<Task>();
+    }
+    public TaskGroup(Parcel in) {
+        name = in.readString();
+        in.readTypedList(tasks, Task.CREATOR);
     }
 
     public Task getTask(int i) { return tasks.get(i); }
@@ -32,4 +40,28 @@ public class TaskGroup {
             throw new Exception("Task not found");
     }
 
+    public static final Parcelable.Creator<TaskGroup> CREATOR =
+            new Parcelable.Creator<TaskGroup>() {
+
+                @Override
+                public TaskGroup createFromParcel(Parcel source) {
+                    return new TaskGroup(source);
+                }
+
+                @Override
+                public TaskGroup[] newArray(int size) {
+                    return new TaskGroup[size];
+                }
+            };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeTypedList(tasks);
+    }
 }

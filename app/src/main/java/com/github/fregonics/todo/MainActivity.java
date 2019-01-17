@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         main = new TaskGroup("main");
 
         if(savedInstanceState != null) {
-            Task t = (Task) savedInstanceState.getParcelable("parc");
+            TaskGroup t = savedInstanceState.getParcelable("main");
             if(t != null) {
-                main.addTask(t);
+                main = t;
             } else {
                 Log.d("MainActivity", "A TAREFA E NULA");
             }
@@ -60,9 +60,8 @@ public class MainActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         if(main.getNumberOfTasks() > 0) {
-            Task t = main.getTask(0);
-            Log.d(MainActivity.class.getSimpleName(), "SALVANDO " + t.title);
-            outState.putParcelable("parc", t);
+            outState.putParcelable("main", main);
+            Log.d(MainActivity.class.getSimpleName(), "SALVANDO");
         }
     }
 
