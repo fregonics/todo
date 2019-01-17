@@ -8,8 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NewTaskActivity" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">@color/colorNewTaskActionBar</item>
-    </style>
-
 </resources>

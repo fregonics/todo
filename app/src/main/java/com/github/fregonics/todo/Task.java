@@ -8,6 +8,8 @@ public class Task implements Parcelable {
     String title;
     String description;
 
+
+
     public Task(String title){this.title = title;}
     public Task(String title, String description) {
         this.title = title;
@@ -19,14 +21,17 @@ public class Task implements Parcelable {
         description = in.readString();
     }
 
-    String getTitle() { return title; }
-    String getDescription() { return description; }
+
 
     void setDescription(String description) { this.description = description; }
+    void changeTitle(String newTitle) { this.title = newTitle; }
 
 
 
 
+    //*************************
+    // SETTING PARCELABLE
+    //*************************
     public static final Parcelable.Creator<Task> CREATOR =
             new Parcelable.Creator<Task>() {
 

@@ -16,15 +16,21 @@ public class NewTaskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_task);
-
         mTaskTitleEditText = findViewById(R.id.et_title);
         mTaskDescriptionEditText = findViewById(R.id.et_description);
     }
 
+
+
+
+
+    //******************
+    //SETTING ACTIVITY BEHAVIOR
+    //******************
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.new_task_options_menu, menu);
+        getMenuInflater().inflate(R.menu.new_task_options_menu, menu);
         return true;
     }
 
@@ -40,6 +46,13 @@ public class NewTaskActivity extends AppCompatActivity {
         return true;
     }
 
+
+
+
+
+    //****************************
+    // SPECIFIC ACTION FUNCTIONS
+    //****************************
     void saveAndExit() {
         String taskTitle = mTaskTitleEditText.getText().toString();
         String taskDescription = mTaskDescriptionEditText.getText().toString();

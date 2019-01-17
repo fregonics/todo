@@ -10,6 +10,8 @@ public class TaskGroup implements Parcelable {
     String name;
     private ArrayList<Task> tasks;
 
+
+
     public TaskGroup(String name) {
         this.name = name;
         tasks = new ArrayList<Task>();
@@ -19,8 +21,15 @@ public class TaskGroup implements Parcelable {
         in.readTypedList(tasks, Task.CREATOR);
     }
 
+
+
+
     public Task getTask(int i) { return tasks.get(i); }
     public int getNumberOfTasks() { return tasks.size(); }
+
+
+
+
 
     public void addTask(String title) {
         Task t = new Task(title);
@@ -33,12 +42,19 @@ public class TaskGroup implements Parcelable {
     public void addTask(Task t) {
         tasks.add(t);
     }
-
     public void removeTask(int i) throws Exception{
         Task remove = tasks.remove(i);
         if (remove == null)
             throw new Exception("Task not found");
     }
+
+
+
+
+
+    //*********************
+    // SETTING PARCELABLE
+    //*********************
 
     public static final Parcelable.Creator<TaskGroup> CREATOR =
             new Parcelable.Creator<TaskGroup>() {

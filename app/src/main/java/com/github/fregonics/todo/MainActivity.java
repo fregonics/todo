@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private final String TASKGROUP_KEY = "main";
+
     private TaskGroup main;
     private RecyclerView mListOfTasks;
     private RecyclerView.LayoutManager mListOfTasksLayoutManager;
@@ -28,41 +30,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         main = new TaskGroup("main");
 
-        if(savedInstanceState != null) {
-            TaskGroup t = savedInstanceState.getParcelable("main");
-            if(t != null) {
-                main = t;
-            } else {
-                Log.d("MainActivity", "A TAREFA E NULA");
-            }
-        }
+        if(savedInstanceState != null)
+            main = savedInstanceState.getParcelable("main");
 
-        mListOfTasks = findViewById(R.id.tasks_list);
-        mListOfTasks.setHasFixedSize(true);
-        mListOfTasksLayoutManager = new LinearLayoutManager(this);
-        mListOfTasks.setLayoutManager(mListOfTasksLayoutManager);
-        mListOfTasksAdapter = new ListOfTasksAdapter(main);
-        mListOfTasks.setAdapter(mListOfTasksAdapter);
-
-        mFloatingActionButton = findViewById(R.id.fab_new_task);
-        mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                callNewTaskActivity();
-            }
-        });
-
-
-        //setTestTasks();
+        setRecyclerView();
     }
+
+
+
+
+    //********************
+    // SETTING ACTIVITIES BEHAVIOR
+    //********************
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if(main.getNumberOfTasks() > 0) {
-            outState.putParcelable("main", main);
-            Log.d(MainActivity.class.getSimpleName(), "SALVANDO");
-        }
+        if(main.getNumberOfTasks() > 0)
+            outState.putParcelable(TASKGROUP_KEY, main);
     }
 
     @Override
@@ -78,17 +63,44 @@ public class MainActivity extends AppCompatActivity {
                 main.addTask(newTaskTitle,newTaskDescription);
             else
                 main.addTask(newTaskTitle);
-
-            final String TAG = "TESTE";
-
-            Log.d(TAG, "NOVO MEMBRO ADICIONADO " + main.getNumberOfTasks());
         }
     }
+
+
+
+
+    //*********************
+    // SPECIFIC ACTION FUNCTIONS
+    //*********************
 
     void callNewTaskActivity() {
         Intent intent = new Intent(this, NewTaskActivity.class);
         startActivityForResult(intent,1);
     }
+
+    void setRecyclerView() {
+        mListOfTasks = findViewById(R.id.tasks_list);
+        mListOfTasks.setHasFixedSize(true);
+        mListOfTasksLayoutManager = new LinearLayoutManager(this);
+        mListOfTasks.setLayoutManager(mListOfTasksLayoutManager);
+        mListOfTasksAdapter = new ListOfTasksAdapter(main);
+        mListOfTasks.setAdapter(mListOfTasksAdapter);
+
+        mFloatingActionButton = findViewById(R.id.fab_new_task);
+        mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callNewTaskActivity();
+            }
+        });
+    }
+
+
+
+
+    //**************************
+    //SETTING RECYCLERVIEW
+    //**************************
 
     class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.TaskViewHolder> {
         private TaskGroup taskGroup;
@@ -125,22 +137,5 @@ public class MainActivity extends AppCompatActivity {
         public int getItemCount() {
             return taskGroup.getNumberOfTasks();
         }
-
-
     }
-
-
-
-
-
-
-    /*
-    void setTestTasks() {
-        int i;
-        String titles;
-        for (i = 0; i < 100; i ++) {
-            titles = "teste" + i;
-            main.addTask(titles);
-        }
-    }*/
 }
