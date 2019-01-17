@@ -22,6 +22,9 @@ public class TaskGroup {
         Task t = new Task(title,description);
         tasks.add(t);
     }
+    public void addTask(Task t) {
+        tasks.add(t);
+    }
 
     public void removeTask(int i) throws Exception{
         Task remove = tasks.remove(i);

@@ -1,6 +1,7 @@
 package com.github.fregonics.todo;
 
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -27,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         main = new TaskGroup("main");
 
+        if(savedInstanceState != null) {
+            Task t = (Task) savedInstanceState.getParcelable("parc");
+            if(t != null) {
+                main.addTask(t);
+            } else {
+                Log.d("MainActivity", "A TAREFA E NULA");
+            }
+        }
+
         mListOfTasks = findViewById(R.id.tasks_list);
         mListOfTasks.setHasFixedSize(true);
         mListOfTasksLayoutManager = new LinearLayoutManager(this);
@@ -47,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if(main.getNumberOfTasks() > 0) {
+            Task t = main.getTask(0);
+            Log.d(MainActivity.class.getSimpleName(), "SALVANDO " + t.title);
+            outState.putParcelable("parc", t);
+        }
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;
@@ -61,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 main.addTask(newTaskTitle);
 
             final String TAG = "TESTE";
+
             Log.d(TAG, "NOVO MEMBRO ADICIONADO " + main.getNumberOfTasks());
         }
     }
