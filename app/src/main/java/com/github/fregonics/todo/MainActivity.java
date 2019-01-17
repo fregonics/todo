@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        main = new TaskGroup("main");
 
         if(savedInstanceState != null)
-            main = savedInstanceState.getParcelable("main");
+            main = savedInstanceState.getParcelable(TASKGROUP_KEY);
+        else
+            main = new TaskGroup(TASKGROUP_KEY);
 
         setRecyclerView();
     }
@@ -46,8 +47,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if(main.getNumberOfTasks() > 0)
-            outState.putParcelable(TASKGROUP_KEY, main);
+        if(main != null) {
+            if (main.getNumberOfTasks() > 0)
+                outState.putParcelable(TASKGROUP_KEY, main);
+        }
     }
 
     @Override
@@ -135,7 +138,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return taskGroup.getNumberOfTasks();
+            if(taskGroup == null)
+                return 0;
+            else
+                return taskGroup.getNumberOfTasks();
         }
     }
 }
