@@ -1059,7 +1059,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bt_newtask_discard
 id bt_newtask_save
 id buttonPanel
 id center

@@ -1,12 +1,12 @@
-package com.github.fregonics.todo;
+package com.github.fregonics.todo.Data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
 public class Task implements Parcelable {
-    String title;
-    String description;
+    public String title;
+    public String description;
 
 
 

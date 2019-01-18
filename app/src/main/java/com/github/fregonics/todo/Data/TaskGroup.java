@@ -1,6 +1,5 @@
-package com.github.fregonics.todo;
+package com.github.fregonics.todo.Data;
 
-import android.annotation.TargetApi;
 import android.os.Parcel;
 import android.os.Parcelable;
 
