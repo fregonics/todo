@@ -4,7 +4,7 @@
             "outputFile": "/home/luiz/Documentos/ToDo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f135aa28121e560d113b4440987f9d3e/res/values-land/values-land.xml",
+                    "source": "/home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/43e5a7b2384e8dcbfb307a1957105eed/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/2a6c9ccb69a49c4437c31791106ce92f/res/values-land/values-land.xml",
+                    "source": "/home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

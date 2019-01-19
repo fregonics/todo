@@ -1,6 +1,9 @@
 package com.github.fregonics.todo;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -8,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mListOfTasksLayoutManager;
     private RecyclerView.Adapter mListOfTasksAdapter;
     private FloatingActionButton mFloatingActionButton;
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +36,18 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState != null)
             main = savedInstanceState.getParcelable(TASKGROUP_KEY);
-        else
-            main = new TaskGroup(TASKGROUP_KEY);
+        else {
+            main = new TaskGroup("main");
+            try {
+                Log.d(MainActivity.class.getSimpleName()
+                        ,"LENDO DO ARQUIVO");
+                main.readFromFile(getApplicationContext());
+            } catch (Exception e) {
+                Log.d(MainActivity.class.getSimpleName(),
+                        "NAO COSEGUIU LER ");
+                e.printStackTrace();
+            }
+        }
 
         setRecyclerView();
     }
@@ -54,9 +69,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if(savedInstanceState != null)
+            main = savedInstanceState.getParcelable(TASKGROUP_KEY);
+        else {
+            main = new TaskGroup("main");
+            try {
+                Log.d(MainActivity.class.getSimpleName()
+                        ,"LENDO DO ARQUIVO");
+                main.readFromFile(getApplicationContext());
+            } catch (Exception e) {
+                Log.d(MainActivity.class.getSimpleName(),
+                        "NAO COSEGUIU LER ");
+                e.printStackTrace();
+            }
+        }
+
+        setRecyclerView();
+    }
+
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;
+
 
         if(resultCode == 1) {
             newTaskTitle = data.getStringExtra(getString(R.string.task_title));
@@ -66,6 +104,13 @@ public class MainActivity extends AppCompatActivity {
                 main.addTask(newTaskTitle,newTaskDescription);
             else
                 main.addTask(newTaskTitle);
+
+            try {
+                main.writeToFile(getApplicationContext());
+            } catch (Exception e) {
+                Log.d(MainActivity.class.getSimpleName()
+                        , "NAO CONSEGUIU ESCREVER" + e.getMessage());
+            }
         }
     }
 
