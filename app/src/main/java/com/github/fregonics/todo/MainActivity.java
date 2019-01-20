@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.fregonics.todo.Data.TaskGroup;
 
@@ -39,12 +40,8 @@ public class MainActivity extends AppCompatActivity {
         else {
             main = new TaskGroup("main");
             try {
-                Log.d(MainActivity.class.getSimpleName()
-                        ,"LENDO DO ARQUIVO");
                 main.readFromFile(getApplicationContext());
             } catch (Exception e) {
-                Log.d(MainActivity.class.getSimpleName(),
-                        "NAO COSEGUIU LER ");
                 e.printStackTrace();
             }
         }
@@ -69,28 +66,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState != null)
-            main = savedInstanceState.getParcelable(TASKGROUP_KEY);
-        else {
-            main = new TaskGroup("main");
-            try {
-                Log.d(MainActivity.class.getSimpleName()
-                        ,"LENDO DO ARQUIVO");
-                main.readFromFile(getApplicationContext());
-            } catch (Exception e) {
-                Log.d(MainActivity.class.getSimpleName(),
-                        "NAO COSEGUIU LER ");
-                e.printStackTrace();
-            }
-        }
-
-        setRecyclerView();
-    }
-
-
-    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;
@@ -108,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 main.writeToFile(getApplicationContext());
             } catch (Exception e) {
-                Log.d(MainActivity.class.getSimpleName()
-                        , "NAO CONSEGUIU ESCREVER" + e.getMessage());
+                e.printStackTrace();
             }
         }
     }
