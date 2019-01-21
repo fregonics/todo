@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.github.fregonics.todo.Data.TaskGroup;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ListOfTasksAdapter.ListItemClickListener{
     private final String TASKGROUP_KEY = "main";
 
     private TaskGroup main;
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         mListOfTasks.setHasFixedSize(true);
         mListOfTasksLayoutManager = new LinearLayoutManager(this);
         mListOfTasks.setLayoutManager(mListOfTasksLayoutManager);
-        mListOfTasksAdapter = new ListOfTasksAdapter(main);
+        mListOfTasksAdapter = new ListOfTasksAdapter(main,this);
         mListOfTasks.setAdapter(mListOfTasksAdapter);
 
         mFloatingActionButton = findViewById(R.id.fab_new_task);
@@ -118,49 +118,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onListItemClick(int itemIndex) {
+        Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
 
-
-    //**************************
-    //SETTING RECYCLERVIEW
-    //**************************
-
-    class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.TaskViewHolder> {
-        private TaskGroup taskGroup;
-
-        public ListOfTasksAdapter(TaskGroup taskGroup) {
-            this.taskGroup = taskGroup;
-        }
-
-        public class TaskViewHolder extends RecyclerView.ViewHolder {
-            TextView textView;
-            public TaskViewHolder(@NonNull TextView textView) {
-                super(textView);
-                this.textView = textView;
-            }
-        }
-
-        @NonNull
-        @Override
-        public TaskViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
-            TextView textView = (TextView) LayoutInflater.from(getApplicationContext())
-                    .inflate(R.layout.task_layout, viewGroup, false);
-            TaskViewHolder tvh = new TaskViewHolder(textView);
-
-            return tvh;
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull TaskViewHolder taskViewHolder, int i) {
-            taskViewHolder.textView.setText(taskGroup.getTask(i).title);
-        }
-
-        @Override
-        public int getItemCount() {
-            if(taskGroup == null)
-                return 0;
-            else
-                return taskGroup.getNumberOfTasks();
-        }
+        Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
     }
 }
