@@ -1061,6 +1061,7 @@ id blocking
 id bottom
 id bt_newtask_save
 id buttonPanel
+id cb_task
 id center
 id center_horizontal
 id center_vertical
@@ -1118,6 +1119,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layout_task
 id left
 id line1
 id line3

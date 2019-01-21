@@ -7,18 +7,24 @@ import android.util.Log;
 public class Task implements Parcelable {
     public String title;
     public String description;
+    public boolean isDone;
 
 
-
-    public Task(String title){this.title = title;}
+    public Task(String title){
+        this.title = title;
+        isDone = false;
+    }
     public Task(String title, String description) {
         this.title = title;
         this.description = description;
+        isDone = false;
     }
     public Task(Parcel in) {
         Log.d("Task", "TENTOU RECRIAR");
         title = in.readString();
         description = in.readString();
+        if(in.readInt() == 1) isDone = true;
+        else isDone = false;
     }
 
 
@@ -57,5 +63,7 @@ public class Task implements Parcelable {
         Log.d("Task", "TENTOU ESCREVER");
         dest.writeString(title);
         dest.writeString(description);
+        if(isDone) dest.writeInt(1);
+        else dest.writeInt(0);
     }
 }

@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.github.fregonics.todo.Data.TaskGroup;
@@ -25,21 +27,21 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
     }
 
     public interface ListItemClickListener{
-        void onListItemClick(int itemIndex);
+        void onListItemClick(int itemIndex, boolean isDoneState);
     }
 
     public class TaskViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView textView;
-        public TaskViewHolder(@NonNull TextView textView) {
-            super(textView);
-            this.textView = textView;
-            textView.setOnClickListener(this);
+        CheckBox checkBox;
+        public TaskViewHolder(@NonNull FrameLayout frameLayout) {
+            super(frameLayout);
+            checkBox = frameLayout.findViewById(R.id.cb_task);
+            checkBox.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
             Log.d(ListOfTasksAdapter.class.getSimpleName(), "DETECTOU CLIQUE " + getAdapterPosition());
-            mclickListener.onListItemClick(getAdapterPosition());
+            mclickListener.onListItemClick(getAdapterPosition(), checkBox.isChecked());
         }
     }
 
@@ -47,16 +49,17 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
     @Override
     public TaskViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        TextView textView = (TextView) LayoutInflater.from(viewGroup.getContext())
+        FrameLayout frameLayout = (FrameLayout) LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.task_layout, viewGroup, false);
-        TaskViewHolder tvh = new TaskViewHolder(textView);
+        TaskViewHolder tvh = new TaskViewHolder(frameLayout);
 
         return tvh;
     }
 
     @Override
     public void onBindViewHolder(@NonNull TaskViewHolder taskViewHolder, int i) {
-        taskViewHolder.textView.setText(taskGroup.getTask(i).title);
+        taskViewHolder.checkBox.setText(taskGroup.getTask(i).title);
+        taskViewHolder.checkBox.setChecked(taskGroup.getTask(i).isDone);
     }
 
     @Override

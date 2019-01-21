@@ -119,9 +119,9 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
 
 
     @Override
-    public void onListItemClick(int itemIndex) {
+    public void onListItemClick(int itemIndex, boolean isDoneState) {
         Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
-
         Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
+        main.getTask(itemIndex).isDone = isDoneState;
     }
 }
