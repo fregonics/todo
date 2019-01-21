@@ -13,8 +13,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private RecyclerView.Adapter mListOfTasksAdapter;
     private FloatingActionButton mFloatingActionButton;
     private SharedPreferences sharedPreferences;
+    private MenuItem mDeleteTask, mCancelTaskSelection;
+    private int mSelectedTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                 callNewTaskActivity();
             }
         });
+
+        mSelectedTask = -1;
     }
 
 
@@ -84,10 +92,44 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.selected_task_options_menu, menu);
+        mDeleteTask = menu.getItem(0);
+        mCancelTaskSelection = menu.getItem(1);
+        mDeleteTask.setVisible(false);
+        mCancelTaskSelection.setVisible(false);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item == mDeleteTask) {
+            try {
+                main.removeTask(mSelectedTask);
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(), "An error has ocurred", Toast.LENGTH_LONG);
+            }
+            setRecyclerView();
+        }
+        mDeleteTask.setVisible(false);
+        mCancelTaskSelection.setVisible(false);
+        mSelectedTask = -1;
+        return true;
+    }
+
+    @Override
     public void onListItemClick(int itemIndex, boolean isDoneState) {
         Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
         Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
         main.getTask(itemIndex).isDone = isDoneState;
+    }
+
+    @Override
+    public void onListItemLongClick(int itemIndex, FrameLayout item) {
+        item.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
+        mSelectedTask = itemIndex;
+        mDeleteTask.setVisible(true);
+        mCancelTaskSelection.setVisible(true);
     }
 
     @Override

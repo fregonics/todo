@@ -7,4 +7,7 @@
     <!-- add new task options menu -->
     <string name="button_save" translatable="true">Save</string>
     <string name="button_discard" translatable="true">Discard</string>
+    <!-- options menu when the task is selected -->
+    <string name="button_delete" translatable="true">Delete</string>
+    <string name="button_cancel" translatable="true">Cancel</string>
 </resources>

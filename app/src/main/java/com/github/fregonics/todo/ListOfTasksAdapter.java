@@ -28,21 +28,32 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
 
     public interface ListItemClickListener{
         void onListItemClick(int itemIndex, boolean isDoneState);
+        void onListItemLongClick(int itemIndex, FrameLayout item);
     }
 
-    public class TaskViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class TaskViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         CheckBox checkBox;
+        FrameLayout frameLayout;
 
         public TaskViewHolder(@NonNull FrameLayout frameLayout) {
             super(frameLayout);
+            this.frameLayout = frameLayout;
             checkBox = frameLayout.findViewById(R.id.cb_task);
             checkBox.setOnClickListener(this);
+            checkBox.setOnLongClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
             mclickListener.onListItemClick(getAdapterPosition(), checkBox.isChecked());
             taskGroup.getTask(getAdapterPosition()).isDone = checkBox.isChecked();
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            Log.d(ListOfTasksAdapter.class.getSimpleName(), "ITEM SEGURADO");
+            mclickListener.onListItemLongClick(getAdapterPosition(),frameLayout);
+            return true;
         }
     }
 
