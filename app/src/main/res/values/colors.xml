@@ -6,4 +6,5 @@
 
     <color name="colorNewTaskActionBar">#00574B</color>
     <color name="colorTaskSelected">#dddddd</color>
+    <color name="taskDefaultBkgColorr">#eeeeee</color>
 </resources>

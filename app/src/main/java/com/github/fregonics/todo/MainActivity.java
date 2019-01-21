@@ -18,6 +18,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private SharedPreferences sharedPreferences;
     private MenuItem mDeleteTask, mCancelTaskSelection;
     private int mSelectedTask;
+    private FrameLayout mSelectedTaskItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,15 +121,34 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
 
     @Override
     public void onListItemClick(int itemIndex, boolean isDoneState) {
-        Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
-        Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
-        main.getTask(itemIndex).isDone = isDoneState;
+        if(mSelectedTask == itemIndex) {
+            mSelectedTask = -1;
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+            CheckBox checkBoxTask = mSelectedTaskItem.findViewById(R.id.cb_task);
+            checkBoxTask.setChecked(!checkBoxTask.isChecked());
+            mDeleteTask.setVisible(false);
+            mCancelTaskSelection.setVisible(false);
+        }
+        else if(mSelectedTask != -1) {
+            mSelectedTask = -1;
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+            mDeleteTask.setVisible(false);
+            mCancelTaskSelection.setVisible(false);
+            main.getTask(itemIndex).isDone = isDoneState;
+        }
+        else {
+            main.getTask(itemIndex).isDone = isDoneState;
+        }
     }
 
     @Override
     public void onListItemLongClick(int itemIndex, FrameLayout item) {
+        if(mSelectedTask != -1)
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+
         item.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
         mSelectedTask = itemIndex;
+        mSelectedTaskItem = item;
         mDeleteTask.setVisible(true);
         mCancelTaskSelection.setVisible(true);
     }
