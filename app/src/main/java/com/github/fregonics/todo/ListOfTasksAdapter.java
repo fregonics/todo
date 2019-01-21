@@ -32,6 +32,7 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
 
     public class TaskViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         CheckBox checkBox;
+
         public TaskViewHolder(@NonNull FrameLayout frameLayout) {
             super(frameLayout);
             checkBox = frameLayout.findViewById(R.id.cb_task);
@@ -40,7 +41,6 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
 
         @Override
         public void onClick(View v) {
-            Log.d(ListOfTasksAdapter.class.getSimpleName(), "DETECTOU CLIQUE " + getAdapterPosition());
             mclickListener.onListItemClick(getAdapterPosition(), checkBox.isChecked());
         }
     }
@@ -48,11 +48,10 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
     @NonNull
     @Override
     public TaskViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
         FrameLayout frameLayout = (FrameLayout) LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.task_layout, viewGroup, false);
-        TaskViewHolder tvh = new TaskViewHolder(frameLayout);
 
+        TaskViewHolder tvh = new TaskViewHolder(frameLayout);
         return tvh;
     }
 

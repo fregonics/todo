@@ -34,12 +34,8 @@ public class TaskGroup implements Parcelable {
     }
 
 
-
-
     public Task getTask(int i) { return tasks.get(i); }
     public int getNumberOfTasks() { return tasks.size(); }
-
-
 
 
 
@@ -92,7 +88,7 @@ public class TaskGroup implements Parcelable {
 
 
     //**************************
-    // JSON TRANSFORMATION FUNCTIONS
+    // JSON FUNCTIONS
     //***************************
     public JSONObject transformIntoJSON() throws JSONException {
         JSONArray tasksArray = new JSONArray();

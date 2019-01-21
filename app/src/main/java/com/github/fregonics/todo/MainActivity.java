@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         }
 
         setRecyclerView();
+
+        mFloatingActionButton = findViewById(R.id.fab_new_task);
+        mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callNewTaskActivity();
+            }
+        });
     }
 
 
@@ -76,6 +84,13 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     }
 
     @Override
+    public void onListItemClick(int itemIndex, boolean isDoneState) {
+        Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
+        Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
+        main.getTask(itemIndex).isDone = isDoneState;
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;
@@ -90,15 +105,13 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
             else
                 main.addTask(newTaskTitle);
 
-            try {
+            /*try {
                 main.writeToFile(getApplicationContext());
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     }
-
-
 
 
     //*********************
@@ -117,21 +130,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mListOfTasks.setLayoutManager(mListOfTasksLayoutManager);
         mListOfTasksAdapter = new ListOfTasksAdapter(main,this);
         mListOfTasks.setAdapter(mListOfTasksAdapter);
-
-        mFloatingActionButton = findViewById(R.id.fab_new_task);
-        mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                callNewTaskActivity();
-            }
-        });
     }
 
 
-    @Override
-    public void onListItemClick(int itemIndex, boolean isDoneState) {
-        Log.d(MainActivity.class.getSimpleName(), "DETECTOU CLIQUE " + itemIndex);
-        Toast.makeText(getApplicationContext(),main.getTask(itemIndex).title,Toast.LENGTH_SHORT).show();
-        main.getTask(itemIndex).isDone = isDoneState;
-    }
+
 }
