@@ -27,6 +27,10 @@ import com.github.fregonics.todo.Data.TaskGroup;
 
 public class MainActivity extends AppCompatActivity implements ListOfTasksAdapter.ListItemClickListener{
     private final String TASKGROUP_KEY = "main";
+    public static final String INTENT_TASK_KEY = "task";
+    private final int MENU_SELECTED_DETAILS_INDEX = 0;
+    private final int MENU_SELECTED_DELETE_INDEX = 1;
+    private final int MENU_SELECTED_CANCEL_INDEX = 2;
 
     private TaskGroup main;
     private RecyclerView mListOfTasks;
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private RecyclerView.Adapter mListOfTasksAdapter;
     private FloatingActionButton mFloatingActionButton;
     private SharedPreferences sharedPreferences;
-    private MenuItem mDeleteTask, mCancelTaskSelection;
+    private MenuItem mDetailsTask, mDeleteTask, mCancelTaskSelection;
     private int mSelectedTask;
     private FrameLayout mSelectedTaskItem;
 
@@ -96,8 +100,11 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.selected_task_options_menu, menu);
-        mDeleteTask = menu.getItem(0);
-        mCancelTaskSelection = menu.getItem(1);
+
+        mDetailsTask = menu.getItem(MENU_SELECTED_DETAILS_INDEX);
+        mDeleteTask = menu.getItem(MENU_SELECTED_DELETE_INDEX);
+        mCancelTaskSelection = menu.getItem(MENU_SELECTED_CANCEL_INDEX);
+        mDetailsTask.setVisible(false);
         mDeleteTask.setVisible(false);
         mCancelTaskSelection.setVisible(false);
         return true;
@@ -112,8 +119,10 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                 Toast.makeText(getApplicationContext(), "An error has ocurred", Toast.LENGTH_LONG);
             }
             setRecyclerView();
-        } else {
+        } else if(item == mCancelTaskSelection) {
             mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
+        } else if(item == mDetailsTask) {
+            callDetailsTaskActivity(mSelectedTask);
         }
         unSelectTaskItem();
         return true;
@@ -144,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
         mSelectedTask = itemIndex;
         mSelectedTaskItem = item;
+        mDetailsTask.setVisible(true);
         mDeleteTask.setVisible(true);
         mCancelTaskSelection.setVisible(true);
     }
@@ -175,6 +185,12 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         startActivityForResult(intent,1);
     }
 
+    void callDetailsTaskActivity(int i) {
+        Intent intent = new Intent(this, TaskDetailsActivity.class);
+        intent.putExtra(INTENT_TASK_KEY, main.getTask(i));
+        startActivity(intent);
+    }
+
     void setRecyclerView() {
         mListOfTasks = findViewById(R.id.tasks_list);
         mListOfTasks.setHasFixedSize(true);
@@ -186,6 +202,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     void unSelectTaskItem() {
         mSelectedTask = -1;
         mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
+        mDetailsTask.setVisible(false);
         mDeleteTask.setVisible(false);
         mCancelTaskSelection.setVisible(false);
     }

@@ -1287,6 +1287,7 @@ id bottom
 id bt_newtask_save
 id bt_selectedtask_cancel
 id bt_selectedtask_delete
+id bt_selectedtask_details
 id buttonPanel
 id cancel_action
 id cb_task
@@ -1499,6 +1500,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_description
+id tv_details_description
+id tv_details_title
 id tv_title
 id uniform
 id unlabeled
@@ -1565,6 +1568,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_new_task
+layout activity_task_details
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1663,6 +1667,7 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string button_cancel
 string button_delete
+string button_details
 string button_discard
 string button_save
 string character_counter_content_description
@@ -1703,6 +1708,7 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string task_description
+string task_details_completed_text
 string task_title
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
