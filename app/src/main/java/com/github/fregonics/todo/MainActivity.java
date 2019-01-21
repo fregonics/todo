@@ -66,6 +66,16 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        try {
+            main.writeToFile(getApplicationContext());
+        } catch (Exception e) {
+            Log.d(MainActivity.class.getSimpleName(), e.getMessage());
+        }
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         String newTaskTitle, newTaskDescription;

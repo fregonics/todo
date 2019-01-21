@@ -19,6 +19,7 @@ public class TaskGroup implements Parcelable {
 
     private static final String TASK_TITLE_KEY = "task_title";
     private static final String TASK_DESCRIPTION_KEY = "task_description";
+    private static final String TASK_ISDONE_KEY = "task_isdone";
     private static final String TASKGROUP_NAME_KEY = "taskgroup_name";
     private static final String TASKGROUP_TASKS_KEY = "taskgroup_tasks";
     private static final int MAX_FILE_SIZE_TEMP = 999999;
@@ -55,6 +56,7 @@ public class TaskGroup implements Parcelable {
     }
     public void addTask(JSONObject object) throws JSONException{
         Task t = new Task(object.getString(TASK_TITLE_KEY), object.getString(TASK_DESCRIPTION_KEY));
+        t.isDone = object.getBoolean(TASK_ISDONE_KEY);
         tasks.add(t);
     }
     public void removeTask(int i) throws Exception{
@@ -100,6 +102,7 @@ public class TaskGroup implements Parcelable {
             JSONObject task = new JSONObject();
             task.put(TASK_TITLE_KEY, tasks.get(i).title);
             task.put(TASK_DESCRIPTION_KEY, tasks.get(i).description);
+            task.put(TASK_ISDONE_KEY, tasks.get(i).isDone);
 
             tasksArray.put(task);
         }
