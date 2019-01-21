@@ -9,7 +9,8 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/tasks_list"/>
+        android:id="@+id/tasks_list"
+        android:paddingTop="5dp"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_new_task"

@@ -4,11 +4,16 @@
     android:id="@+id/layout_task"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
     >
     <CheckBox
         android:id="@+id/cb_task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
 
 </FrameLayout>
