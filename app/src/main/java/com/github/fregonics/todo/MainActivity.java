@@ -115,27 +115,19 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         } else {
             mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
         }
-        mDeleteTask.setVisible(false);
-        mCancelTaskSelection.setVisible(false);
-        mSelectedTask = -1;
+        unSelectTaskItem();
         return true;
     }
 
     @Override
     public void onListItemClick(int itemIndex, boolean isDoneState) {
         if(mSelectedTask == itemIndex) {
-            mSelectedTask = -1;
-            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
             CheckBox checkBoxTask = mSelectedTaskItem.findViewById(R.id.cb_task);
             checkBoxTask.setChecked(!checkBoxTask.isChecked());
-            mDeleteTask.setVisible(false);
-            mCancelTaskSelection.setVisible(false);
+            unSelectTaskItem();
         }
         else if(mSelectedTask != -1) {
-            mSelectedTask = -1;
-            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
-            mDeleteTask.setVisible(false);
-            mCancelTaskSelection.setVisible(false);
+            unSelectTaskItem();
             main.getTask(itemIndex).isDone = isDoneState;
         }
         else {
@@ -148,7 +140,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         if(mSelectedTask != -1)
             mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
 
-        item.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
+        mSelectedTaskItem = item;
+        mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
         mSelectedTask = itemIndex;
         mSelectedTaskItem = item;
         mDeleteTask.setVisible(true);
@@ -189,6 +182,12 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mListOfTasks.setLayoutManager(mListOfTasksLayoutManager);
         mListOfTasksAdapter = new ListOfTasksAdapter(main,this);
         mListOfTasks.setAdapter(mListOfTasksAdapter);
+    }
+    void unSelectTaskItem() {
+        mSelectedTask = -1;
+        mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+        mDeleteTask.setVisible(false);
+        mCancelTaskSelection.setVisible(false);
     }
 
 
