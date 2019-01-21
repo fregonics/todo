@@ -42,6 +42,7 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
         @Override
         public void onClick(View v) {
             mclickListener.onListItemClick(getAdapterPosition(), checkBox.isChecked());
+            taskGroup.getTask(getAdapterPosition()).isDone = checkBox.isChecked();
         }
     }
 

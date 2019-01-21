@@ -104,12 +104,6 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                 main.addTask(newTaskTitle,newTaskDescription);
             else
                 main.addTask(newTaskTitle);
-
-            /*try {
-                main.writeToFile(getApplicationContext());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }*/
         }
     }
 
