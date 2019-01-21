@@ -112,6 +112,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                 Toast.makeText(getApplicationContext(), "An error has ocurred", Toast.LENGTH_LONG);
             }
             setRecyclerView();
+        } else {
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
         }
         mDeleteTask.setVisible(false);
         mCancelTaskSelection.setVisible(false);
