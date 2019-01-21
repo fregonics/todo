@@ -707,7 +707,7 @@ int color switch_thumb_material_dark 0x7f05007f
 int color switch_thumb_material_light 0x7f050080
 int color switch_thumb_normal_material_dark 0x7f050081
 int color switch_thumb_normal_material_light 0x7f050082
-int color taskDefaultBkgColorr 0x7f050083
+int color taskDefaultBkgColor 0x7f050083
 int color tooltip_background_dark 0x7f050084
 int color tooltip_background_light 0x7f050085
 int dimen abc_action_bar_content_inset_material 0x7f060000

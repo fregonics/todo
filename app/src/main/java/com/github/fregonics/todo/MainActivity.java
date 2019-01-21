@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
             }
             setRecyclerView();
         } else {
-            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
         }
         unSelectTaskItem();
         return true;
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     @Override
     public void onListItemLongClick(int itemIndex, FrameLayout item) {
         if(mSelectedTask != -1)
-            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+            mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
 
         mSelectedTaskItem = item;
         mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.colorTaskSelected));
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     }
     void unSelectTaskItem() {
         mSelectedTask = -1;
-        mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColorr));
+        mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
         mDeleteTask.setVisible(false);
         mCancelTaskSelection.setVisible(false);
     }
