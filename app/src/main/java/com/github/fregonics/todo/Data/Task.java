@@ -29,12 +29,6 @@ public class Task implements Parcelable {
 
 
 
-    void setDescription(String description) { this.description = description; }
-    void changeTitle(String newTitle) { this.title = newTitle; }
-
-
-
-
     //*************************
     // SETTING PARCELABLE
     //*************************
@@ -43,7 +37,6 @@ public class Task implements Parcelable {
 
                 @Override
                 public Task createFromParcel(Parcel source) {
-                    Log.d("Task", "PASSOU PELO CREATOR");
                     return new Task(source);
                 }
 
@@ -60,7 +53,6 @@ public class Task implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        Log.d("Task", "TENTOU ESCREVER");
         dest.writeString(title);
         dest.writeString(description);
         if(isDone) dest.writeInt(1);

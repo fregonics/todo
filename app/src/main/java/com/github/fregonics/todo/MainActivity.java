@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private RecyclerView.LayoutManager mListOfTasksLayoutManager;
     private RecyclerView.Adapter mListOfTasksAdapter;
     private FloatingActionButton mFloatingActionButton;
-    private SharedPreferences sharedPreferences;
     private MenuItem mDetailsTask, mDeleteTask, mCancelTaskSelection;
     private int mSelectedTask;
     private FrameLayout mSelectedTaskItem;
@@ -113,15 +112,16 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item == mDeleteTask) {
-            try {
-                main.removeTask(mSelectedTask);
-            } catch (Exception e) {
+            try { main.removeTask(mSelectedTask); }
+            catch (Exception e) {
                 Toast.makeText(getApplicationContext(), "An error has ocurred", Toast.LENGTH_LONG);
             }
             setRecyclerView();
-        } else if(item == mCancelTaskSelection) {
+        }
+        else if(item == mCancelTaskSelection) {
             mSelectedTaskItem.setBackgroundColor(getResources().getColor(R.color.taskDefaultBkgColor));
-        } else if(item == mDetailsTask) {
+        }
+        else if(item == mDetailsTask) {
             callDetailsTaskActivity(mSelectedTask);
         }
         unSelectTaskItem();

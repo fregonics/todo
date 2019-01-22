@@ -51,7 +51,6 @@ public class ListOfTasksAdapter extends RecyclerView.Adapter<ListOfTasksAdapter.
 
         @Override
         public boolean onLongClick(View v) {
-            Log.d(ListOfTasksAdapter.class.getSimpleName(), "ITEM SEGURADO");
             mclickListener.onListItemLongClick(getAdapterPosition(),frameLayout);
             return true;
         }
