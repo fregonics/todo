@@ -1211,6 +1211,7 @@ drawable ic_vol_type_speaker_group_light
 drawable ic_vol_type_speaker_light
 drawable ic_vol_type_tv_dark
 drawable ic_vol_type_tv_light
+drawable icon_open_drawer
 drawable mr_button_connected_dark
 drawable mr_button_connected_light
 drawable mr_button_connecting_dark

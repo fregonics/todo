@@ -27,6 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.fregonics.todo.Data.TaskGroup;
+import com.github.fregonics.todo.Data.TaskGroupsManager;
 
 public class MainActivity extends AppCompatActivity implements ListOfTasksAdapter.ListItemClickListener{
     private final String TASKGROUP_KEY = "main";
@@ -53,9 +54,11 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTaskGroups = new String[5];
-        for(int i = 0; i < 5; i ++)
-            mTaskGroups[i] = "teste" + i;
+        try {
+            mTaskGroups = TaskGroupsManager.getTaskGroupsNames(getApplicationContext());
+        } catch (Exception e) {
+            Log.d(MainActivity.class.getSimpleName(), e.getMessage());
+        }
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerList = findViewById(R.id.lv_left_drawer);
@@ -107,6 +110,11 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         super.onStop();
         try {
             main.writeToFile(getApplicationContext());
+        } catch (Exception e) {
+            Log.d(MainActivity.class.getSimpleName(), e.getMessage());
+        }
+        try {
+            TaskGroupsManager.storeTaskGroupsNames(getApplicationContext(), mTaskGroups);
         } catch (Exception e) {
             Log.d(MainActivity.class.getSimpleName(), e.getMessage());
         }
