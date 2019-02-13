@@ -57,7 +57,14 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         try {
             mTaskGroups = TaskGroupsManager.getTaskGroupsNames(getApplicationContext());
         } catch (Exception e) {
-            Log.d(MainActivity.class.getSimpleName(), e.getMessage());
+            Log.d(MainActivity.class.getSimpleName(), "Storing taskgroups for the first time");
+
+            mTaskGroups = new String[5];
+            for(int i = 0; i < 5; i ++)
+                mTaskGroups[i] = "teste" + i;
+
+            try { TaskGroupsManager.storeTaskGroupsNames(getApplicationContext(), mTaskGroups); }
+            catch (Exception e1) { Log.d(MainActivity.class.getSimpleName(), e1.getMessage()); }
         }
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
