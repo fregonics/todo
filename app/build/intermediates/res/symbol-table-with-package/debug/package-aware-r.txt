@@ -1705,6 +1705,7 @@ string mr_dialog_route_header
 string mr_system_route_name
 string mr_user_route_category_name
 string mtrl_chip_close_icon_content_description
+string new_taskgroup
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

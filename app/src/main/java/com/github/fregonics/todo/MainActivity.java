@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private FrameLayout mSelectedTaskItem;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
+    private String[] mDrawerMenuItems;
 
     private String[] mTaskGroups;
 
@@ -70,13 +71,21 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
             catch (Exception e1) { Log.d(MainActivity.class.getSimpleName(), e1.getMessage()); }
         }
 
+        mDrawerMenuItems = new String[mTaskGroups.length + 1];
+        for(int i = 0; i < mDrawerMenuItems.length; i ++) {
+            if(i < mTaskGroups.length)
+                mDrawerMenuItems[i] = mTaskGroups[i];
+            else
+                mDrawerMenuItems[i] = getString(R.string.new_taskgroup);
+        }
+
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerList = findViewById(R.id.lv_left_drawer);
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_item, mTaskGroups));
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_item, mDrawerMenuItems));
         mDrawerList.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), mTaskGroups[position], Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), mDrawerMenuItems[position], Toast.LENGTH_LONG).show();
             }
         });
 
