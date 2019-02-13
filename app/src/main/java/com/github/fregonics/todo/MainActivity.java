@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,8 +19,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.FrameLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,11 +43,24 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private MenuItem mDetailsTask, mDeleteTask, mCancelTaskSelection;
     private int mSelectedTask;
     private FrameLayout mSelectedTaskItem;
+    private DrawerLayout mDrawerLayout;
+    private ListView mDrawerList;
+
+    private String[] mTaskGroups;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mTaskGroups = new String[5];
+        for(int i = 0; i < 5; i ++)
+            mTaskGroups[i] = "teste" + i;
+
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerList = findViewById(R.id.lv_left_drawer);
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_item, mTaskGroups));
+
 
         if(savedInstanceState != null)
             main = savedInstanceState.getParcelable(TASKGROUP_KEY);

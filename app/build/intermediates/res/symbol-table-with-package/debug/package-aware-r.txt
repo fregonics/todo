@@ -1316,6 +1316,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id drawer_layout
 id edit_query
 id end
 id end_padder
@@ -1355,6 +1356,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lv_left_drawer
 id masked
 id media_actions
 id message
@@ -1502,6 +1504,7 @@ id transition_transform
 id tv_description
 id tv_details_description
 id tv_details_title
+id tv_drawer_item
 id tv_title
 id uniform
 id unlabeled
@@ -1583,6 +1586,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout drawer_item
 layout mr_cast_dialog
 layout mr_cast_group_item
 layout mr_cast_group_volume_item
