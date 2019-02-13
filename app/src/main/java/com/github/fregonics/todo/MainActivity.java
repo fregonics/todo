@@ -19,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.FrameLayout;
@@ -28,6 +29,8 @@ import android.widget.Toast;
 
 import com.github.fregonics.todo.Data.TaskGroup;
 import com.github.fregonics.todo.Data.TaskGroupsManager;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ListOfTasksAdapter.ListItemClickListener{
     private final String TASKGROUP_KEY = "main";
@@ -70,7 +73,12 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerList = findViewById(R.id.lv_left_drawer);
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_item, mTaskGroups));
-
+        mDrawerList.setOnItemClickListener(new ListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), mTaskGroups[position], Toast.LENGTH_LONG).show();
+            }
+        });
 
         if(savedInstanceState != null)
             main = savedInstanceState.getParcelable(TASKGROUP_KEY);
