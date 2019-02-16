@@ -1,6 +1,7 @@
 package com.github.fregonics.todo;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -8,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,6 +24,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -89,23 +92,8 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                 if(position < mTaskGroups.length)
                     Toast.makeText(getApplicationContext(), mDrawerMenuItems[position], Toast.LENGTH_LONG).show();
                 else {
-                    newTaskgroups = new String[mTaskGroups.length + 1];
-                    for(int i = 0; i < newTaskgroups.length; i ++) {
-                        if(i < mTaskGroups.length)
-                            newTaskgroups[i] = mTaskGroups[i];
-                        else
-                            newTaskgroups[i] = "teste" + i;
-                    }
-                    mTaskGroups = newTaskgroups;
+                    showNewTaskgroupDialog();
                 }
-                mDrawerMenuItems = new String[mTaskGroups.length + 1];
-                for(int i = 0; i < mDrawerMenuItems.length; i ++) {
-                    if(i < mTaskGroups.length)
-                        mDrawerMenuItems[i] = mTaskGroups[i];
-                    else
-                        mDrawerMenuItems[i] = getString(R.string.new_taskgroup);
-                }
-                mDrawerList.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.drawer_item, mDrawerMenuItems));
             }
         });
 
@@ -224,6 +212,49 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mDetailsTask.setVisible(true);
         mDeleteTask.setVisible(true);
         mCancelTaskSelection.setVisible(true);
+    }
+
+    public void showNewTaskgroupDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.new_taskgroup_title);
+
+        LayoutInflater inflater = getLayoutInflater();
+        final View view = inflater.inflate(R.layout.dialog_new_taskgroup, null);
+        builder.setView(view);
+
+        builder.setPositiveButton(R.string.new_taskgroup_button_confirm, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                EditText etName = view.findViewById(R.id.et_new_taskgroup_name);
+                String name = etName.getText().toString();
+
+                String[] newTaskgroups;
+                newTaskgroups = new String[mTaskGroups.length + 1];
+                for(int i = 0; i < newTaskgroups.length; i ++) {
+                    if(i < mTaskGroups.length)
+                        newTaskgroups[i] = mTaskGroups[i];
+                    else
+                        newTaskgroups[i] = name;
+                }
+                mTaskGroups = newTaskgroups;
+
+                mDrawerMenuItems = new String[mTaskGroups.length + 1];
+                    for(int i = 0; i < mDrawerMenuItems.length; i ++) {
+                    if(i < mTaskGroups.length)
+                        mDrawerMenuItems[i] = mTaskGroups[i];
+                    else
+                        mDrawerMenuItems[i] = getString(R.string.new_taskgroup);
+                }
+                    mDrawerList.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.drawer_item, mDrawerMenuItems));
+                }
+        });
+        builder.setNegativeButton(R.string.new_taskgroup_button_canceel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.show();
     }
 
     @Override
