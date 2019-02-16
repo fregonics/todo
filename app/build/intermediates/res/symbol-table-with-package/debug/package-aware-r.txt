@@ -1324,6 +1324,7 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id et_description
+id et_new_taskgroup_name
 id et_title
 id exitUntilCollapsed
 id expand_activities_button
@@ -1506,6 +1507,7 @@ id tv_description
 id tv_details_description
 id tv_details_title
 id tv_drawer_item
+id tv_new_taskgroup_text
 id tv_title
 id uniform
 id unlabeled
@@ -1587,6 +1589,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_new_taskgroup
 layout drawer_item
 layout mr_cast_dialog
 layout mr_cast_group_item
@@ -1706,6 +1709,10 @@ string mr_system_route_name
 string mr_user_route_category_name
 string mtrl_chip_close_icon_content_description
 string new_taskgroup
+string new_taskgroup_button_canceel
+string new_taskgroup_button_confirm
+string new_taskgroup_text
+string new_taskgroup_title
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

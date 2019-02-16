@@ -1,4 +1,4 @@
-#Wed Feb 13 16:13:07 BRT 2019
+#Sat Feb 16 13:10:45 BRT 2019
 base.0=/home/luiz/Documentos/ToDo/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
 path.1=classes.dex
 renamed.1=classes2.dex
