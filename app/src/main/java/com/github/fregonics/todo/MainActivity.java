@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
     private final int MENU_SELECTED_DETAILS_INDEX = 0;
     private final int MENU_SELECTED_DELETE_INDEX = 1;
     private final int MENU_SELECTED_CANCEL_INDEX = 2;
+    private final String INTENT_TASKGROUP_KEY = "taskgroup";
 
     private TaskGroup main;
     private RecyclerView mListOfTasks;
@@ -89,9 +90,11 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
             String[] newTaskgroups;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position < mTaskGroups.length)
-                    Toast.makeText(getApplicationContext(), mDrawerMenuItems[position], Toast.LENGTH_LONG).show();
-                else {
+                if(position < mTaskGroups.length) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    intent.putExtra(INTENT_TASKGROUP_KEY, mTaskGroups[position]);
+                    startActivity(intent);
+                } else {
                     showNewTaskgroupDialog();
                 }
             }
@@ -100,7 +103,15 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         if(savedInstanceState != null)
             main = savedInstanceState.getParcelable(TASKGROUP_KEY);
         else {
-            main = new TaskGroup("main");
+            String taskgroupName = getIntent().getStringExtra(INTENT_TASKGROUP_KEY);
+            if(taskgroupName == null) {
+                main = new TaskGroup("main");
+                Log.d(MainActivity.class.getSimpleName(), "NOT ENTERED INTENT AREA");
+            }
+            else {
+                main = new TaskGroup(taskgroupName);
+                Log.d(MainActivity.class.getSimpleName(), "ENTERED INTENT AREA");
+            }
             try {
                 main.readFromFile(getApplicationContext());
             } catch (Exception e) {
