@@ -83,9 +83,29 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
         mDrawerList = findViewById(R.id.lv_left_drawer);
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_item, mDrawerMenuItems));
         mDrawerList.setOnItemClickListener(new ListView.OnItemClickListener() {
+            String[] newTaskgroups;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), mDrawerMenuItems[position], Toast.LENGTH_LONG).show();
+                if(position < mTaskGroups.length)
+                    Toast.makeText(getApplicationContext(), mDrawerMenuItems[position], Toast.LENGTH_LONG).show();
+                else {
+                    newTaskgroups = new String[mTaskGroups.length + 1];
+                    for(int i = 0; i < newTaskgroups.length; i ++) {
+                        if(i < mTaskGroups.length)
+                            newTaskgroups[i] = mTaskGroups[i];
+                        else
+                            newTaskgroups[i] = "teste" + i;
+                    }
+                    mTaskGroups = newTaskgroups;
+                }
+                mDrawerMenuItems = new String[mTaskGroups.length + 1];
+                for(int i = 0; i < mDrawerMenuItems.length; i ++) {
+                    if(i < mTaskGroups.length)
+                        mDrawerMenuItems[i] = mTaskGroups[i];
+                    else
+                        mDrawerMenuItems[i] = getString(R.string.new_taskgroup);
+                }
+                mDrawerList.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.drawer_item, mDrawerMenuItems));
             }
         });
 
