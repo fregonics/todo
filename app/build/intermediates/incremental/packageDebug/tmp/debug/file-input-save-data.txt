@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Feb 16 13:10:45 BRT 2019
+#Sat Feb 16 15:13:45 BRT 2019
 1.base=/home/luiz/Documentos/ToDo/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
