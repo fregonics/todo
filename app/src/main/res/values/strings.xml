@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ToDo</string>
 
+    <string name="new_taskgroup" translatable="true">New Taskgroup</string>
+
     <!-- ADD NEW TASK ACTIVITY -->
     <string name="task_title" translatable="true">Task title</string>
     <string name="task_description" translatable="true">Task description</string>
@@ -15,4 +17,11 @@
 
     <!-- TASK DETAILS ACTIVITY -->
     <string name="task_details_completed_text" translatable="true">(completed)</string>
+
+    <!-- NEW TASKGROUP DIALOG -->
+    <string name="new_taskgroup_title" translatable="true">New task group</string>
+    <string name="new_taskgroup_text" translatable="true">Write here the name of the new task group</string>
+    <string name="new_taskgroup_button_confirm" translatable="true">confirm</string>
+    <string name="new_taskgroup_button_canceel" translatable="true">cancel</string>
+
 </resources>
