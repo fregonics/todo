@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="task_title">Titulo da tarefa</string>
+    <string name="task_description">Descrição da tarefa</string>
+    <string name="button_save" translatable="true">Salvar</string>
+    <string name="button_discard" translatable="true">Descartar</string>
+
+    <!-- options menu when the task is selected -->
+    <string name="button_details" translatable="true">Detalhes</string>
+    <string name="button_delete" translatable="true">Apagar</string>
+    <string name="button_cancel" translatable="true">Cancelar</string>
+
+    <!-- TASK DETAILS ACTIVITY -->
+    <string name="task_details_completed_text" translatable="true">(completa)</string>
+
+    <!-- NEW TASKGROUP DIALOG -->
+    <string name="new_taskgroup_title" translatable="true">Novo grupo de tarefas</string>
+    <string name="new_taskgroup_text" translatable="true">Escreva aqui o nome do novo grupo de tarefas</string>
+    <string name="new_taskgroup_button_confirm" translatable="true">confirmar</string>
+    <string name="new_taskgroup_button_canceel" translatable="true">cancelar</string>
+</resources>

@@ -1,189 +1,189 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-28.0.0.aar/9d823d9f30ce38815d2a87acffdb687d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/43e5a7b2384e8dcbfb307a1957105eed/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/35d951ff07f8418e1626c9c5f2c71481/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/78c513c799bc3d148788053fc7361181/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d6ddb7a01f8b6d635aa3c5af052b7060/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d9618aa7740e7f2b38bad7690869da07/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c5ff56dd3916c05525f86c9dd9025782/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/palette-v7-28.0.0.aar/26eade0707b08c6e5c99ce7c7cb40f7d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b210cc243dbee4792fd014e9ed29c81c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7623005a0171504c05902fe52b72aeb0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9ba36c13ab7bd6896e58112082b0e867/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/8731ecfebdb04864d1c51ac2429127bd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/7a9339aa9ece2e4743a2e7228996d6c0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3d2b8ce0eb66c6c286de0e5bf7d9b427/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0d4876e7651d6d11cdee6bf03250e05a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c118f1992e4fa16688da90e1ccf39732/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c39c47e44a6c495f05ebafe2806c3a3b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/33cb20275f8358269a924e1a7f9202a9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a969a80005ffe45da1193557578bba6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/fdbb226805f53fd84afe26dc31dda925/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e121a5971a0dfab50a5194fe7aff9403/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/77d52a518c17d33a3533ad0900cce77c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d8c39c129c79146b9644cb00fe37552b/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/09922fb0f367dd84887b49e50fbe048c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/d44833d69c165f99bf640c06f34f76fc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2e899df21eab440eb9450ac910d5d8ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/b029fc267efba118523b65ca9050f1a0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4d1ac93b711f12c6a05603485dc9103/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/85853213414483d272d095ea0c9bd43d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f8d4738e42ba897d697b41996c702c2/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2d40231534e32bffa64284fb846c3cb3/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a5126fd1c15044f3ec77abb0cf4d6845/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d5dc812c5b955027c86179fac4cf4a02/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5ee75fabd2784ab4685c15ff6da3c41e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4e30d8d4eb9ef7b729cba833bb2f7468/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc3bb23adf42418eb3efc68bca7d1d8c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/394a5b0b402668a6540206e06be0cf60/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f615df7b478950a67ff5b5bcced0082a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b24ca590820b37ca3051a380f7081044/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f67d8a0a1c1a0144f124836e8e154cd1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4dc28632e8237690c80ef673f5060c77/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/77c27f56609e87e6b32784b8a779a224/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/be446e2837083e2572c2f7f4fcac5001/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/cd3c54c7d236f9cea7fb8feb08301908/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5bdabba61713075db9eeac5b92d85ddb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc9bff2c1a08ce41ead16ed74e7cf420/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d73c28f0a839201964eba25a0cba8d06/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/a61955832826460b063269b53a8169c9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c1a98bf50ef50e7bffa7f4efeda84014/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/1742081df7e03b05975b9289c639e4e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/2e0b0f5c7974d073db25ec5a0688b069/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fe9b892bd48b8b8b0a24f34447a4accc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/383f16687d04b2d2f411aaa28404a5de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/0c317a761352b06d1988d44acaa9261a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9e55e39db5c04a6d63eb2b7b54c418c2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9376b07a6c46a60eaaac25f1e2f6026a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/b333d895632b96f18104506817c2089d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/e29bc0b272860a68150ebf5f941ff78f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fffc83a2f054a1a97854ff46c42110fa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c10176ff688669787e29afd884010e74/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/6b2e5abf3b23751f75bb8164196deb2c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/37c5994f85ea73bc5b102ad36a2cb37d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/031c5570e08e7057e0f52bc36fb6086a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/ea91ff76aac72e8574944eb17f3d7ab1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/d0f16894125b72c85ae1226e815fc2ff/AndroidManifest.xml:17:1-22:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:3:5-40
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:5:5-24:19
-MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/35d951ff07f8418e1626c9c5f2c71481/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/35d951ff07f8418e1626c9c5f2c71481/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e121a5971a0dfab50a5194fe7aff9403/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e121a5971a0dfab50a5194fe7aff9403/AndroidManifest.xml:22:5-23:19
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d5dc812c5b955027c86179fac4cf4a02/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d5dc812c5b955027c86179fac4cf4a02/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc3bb23adf42418eb3efc68bca7d1d8c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc3bb23adf42418eb3efc68bca7d1d8c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/0c317a761352b06d1988d44acaa9261a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/0c317a761352b06d1988d44acaa9261a/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.github.fregonics.todo.TaskDetailsActivity
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:12:9-13:67
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:12:9-13:67
 	android:parentActivityName
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:13:13-55
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:13:13-55
 	android:name
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:12:19-54
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:12:19-54
 activity#com.github.fregonics.todo.MainActivity
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.github.fregonics.todo.NewTaskActivity
-ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:21:9-23:67
+ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:21:9-23:67
 	android:parentActivityName
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:23:13-55
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:23:13-55
 	android:name
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml:22:13-44
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml:22:13-44
 uses-sdk
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8f462c4eb4b46211492ca61cd8c1052e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-28.0.0.aar/9d823d9f30ce38815d2a87acffdb687d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-28.0.0.aar/9d823d9f30ce38815d2a87acffdb687d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/43e5a7b2384e8dcbfb307a1957105eed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/43e5a7b2384e8dcbfb307a1957105eed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/35d951ff07f8418e1626c9c5f2c71481/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/35d951ff07f8418e1626c9c5f2c71481/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/78c513c799bc3d148788053fc7361181/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/78c513c799bc3d148788053fc7361181/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d6ddb7a01f8b6d635aa3c5af052b7060/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d6ddb7a01f8b6d635aa3c5af052b7060/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d9618aa7740e7f2b38bad7690869da07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/d9618aa7740e7f2b38bad7690869da07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c5ff56dd3916c05525f86c9dd9025782/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c5ff56dd3916c05525f86c9dd9025782/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/palette-v7-28.0.0.aar/26eade0707b08c6e5c99ce7c7cb40f7d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/palette-v7-28.0.0.aar/26eade0707b08c6e5c99ce7c7cb40f7d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b210cc243dbee4792fd014e9ed29c81c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b210cc243dbee4792fd014e9ed29c81c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7623005a0171504c05902fe52b72aeb0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7623005a0171504c05902fe52b72aeb0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9ba36c13ab7bd6896e58112082b0e867/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9ba36c13ab7bd6896e58112082b0e867/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/8731ecfebdb04864d1c51ac2429127bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/8731ecfebdb04864d1c51ac2429127bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/7a9339aa9ece2e4743a2e7228996d6c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/7a9339aa9ece2e4743a2e7228996d6c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3d2b8ce0eb66c6c286de0e5bf7d9b427/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3d2b8ce0eb66c6c286de0e5bf7d9b427/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0d4876e7651d6d11cdee6bf03250e05a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0d4876e7651d6d11cdee6bf03250e05a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c118f1992e4fa16688da90e1ccf39732/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c118f1992e4fa16688da90e1ccf39732/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c39c47e44a6c495f05ebafe2806c3a3b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c39c47e44a6c495f05ebafe2806c3a3b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/33cb20275f8358269a924e1a7f9202a9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/33cb20275f8358269a924e1a7f9202a9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a969a80005ffe45da1193557578bba6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a969a80005ffe45da1193557578bba6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/fdbb226805f53fd84afe26dc31dda925/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/fdbb226805f53fd84afe26dc31dda925/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26695e378473ba3ff29436ddc76a9b8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e121a5971a0dfab50a5194fe7aff9403/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e121a5971a0dfab50a5194fe7aff9403/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/77d52a518c17d33a3533ad0900cce77c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/77d52a518c17d33a3533ad0900cce77c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d8c39c129c79146b9644cb00fe37552b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d8c39c129c79146b9644cb00fe37552b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/09922fb0f367dd84887b49e50fbe048c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/09922fb0f367dd84887b49e50fbe048c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/d44833d69c165f99bf640c06f34f76fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/d44833d69c165f99bf640c06f34f76fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2e899df21eab440eb9450ac910d5d8ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2e899df21eab440eb9450ac910d5d8ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/b029fc267efba118523b65ca9050f1a0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/b029fc267efba118523b65ca9050f1a0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4d1ac93b711f12c6a05603485dc9103/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4d1ac93b711f12c6a05603485dc9103/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/85853213414483d272d095ea0c9bd43d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/85853213414483d272d095ea0c9bd43d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f8d4738e42ba897d697b41996c702c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f8d4738e42ba897d697b41996c702c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2d40231534e32bffa64284fb846c3cb3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2d40231534e32bffa64284fb846c3cb3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a5126fd1c15044f3ec77abb0cf4d6845/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a5126fd1c15044f3ec77abb0cf4d6845/AndroidManifest.xml:20:5-44
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d5dc812c5b955027c86179fac4cf4a02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d5dc812c5b955027c86179fac4cf4a02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5ee75fabd2784ab4685c15ff6da3c41e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5ee75fabd2784ab4685c15ff6da3c41e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4e30d8d4eb9ef7b729cba833bb2f7468/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4e30d8d4eb9ef7b729cba833bb2f7468/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc3bb23adf42418eb3efc68bca7d1d8c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc3bb23adf42418eb3efc68bca7d1d8c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/394a5b0b402668a6540206e06be0cf60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/394a5b0b402668a6540206e06be0cf60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f615df7b478950a67ff5b5bcced0082a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f615df7b478950a67ff5b5bcced0082a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b24ca590820b37ca3051a380f7081044/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b24ca590820b37ca3051a380f7081044/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f67d8a0a1c1a0144f124836e8e154cd1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/f67d8a0a1c1a0144f124836e8e154cd1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4dc28632e8237690c80ef673f5060c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/4dc28632e8237690c80ef673f5060c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/77c27f56609e87e6b32784b8a779a224/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/77c27f56609e87e6b32784b8a779a224/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/be446e2837083e2572c2f7f4fcac5001/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/be446e2837083e2572c2f7f4fcac5001/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/cd3c54c7d236f9cea7fb8feb08301908/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/cd3c54c7d236f9cea7fb8feb08301908/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5bdabba61713075db9eeac5b92d85ddb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/5bdabba61713075db9eeac5b92d85ddb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc9bff2c1a08ce41ead16ed74e7cf420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/dc9bff2c1a08ce41ead16ed74e7cf420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d73c28f0a839201964eba25a0cba8d06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/d73c28f0a839201964eba25a0cba8d06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/a61955832826460b063269b53a8169c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/a61955832826460b063269b53a8169c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c1a98bf50ef50e7bffa7f4efeda84014/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c1a98bf50ef50e7bffa7f4efeda84014/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/1742081df7e03b05975b9289c639e4e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/1742081df7e03b05975b9289c639e4e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/2e0b0f5c7974d073db25ec5a0688b069/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/2e0b0f5c7974d073db25ec5a0688b069/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fe9b892bd48b8b8b0a24f34447a4accc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fe9b892bd48b8b8b0a24f34447a4accc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/383f16687d04b2d2f411aaa28404a5de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/383f16687d04b2d2f411aaa28404a5de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/b732523dd860c10f498fffbdd7cb8b9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/0c317a761352b06d1988d44acaa9261a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/0c317a761352b06d1988d44acaa9261a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9e55e39db5c04a6d63eb2b7b54c418c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9e55e39db5c04a6d63eb2b7b54c418c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9376b07a6c46a60eaaac25f1e2f6026a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/9376b07a6c46a60eaaac25f1e2f6026a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/b333d895632b96f18104506817c2089d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/b333d895632b96f18104506817c2089d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/e29bc0b272860a68150ebf5f941ff78f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/e29bc0b272860a68150ebf5f941ff78f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fffc83a2f054a1a97854ff46c42110fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/fffc83a2f054a1a97854ff46c42110fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c10176ff688669787e29afd884010e74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/c10176ff688669787e29afd884010e74/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/6b2e5abf3b23751f75bb8164196deb2c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/6b2e5abf3b23751f75bb8164196deb2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/37c5994f85ea73bc5b102ad36a2cb37d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/luiz/.gradle/caches/transforms-2/files-2.1/37c5994f85ea73bc5b102ad36a2cb37d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/031c5570e08e7057e0f52bc36fb6086a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/031c5570e08e7057e0f52bc36fb6086a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/ea91ff76aac72e8574944eb17f3d7ab1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/ea91ff76aac72e8574944eb17f3d7ab1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/d0f16894125b72c85ae1226e815fc2ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/luiz/.gradle/caches/transforms-2/files-2.1/d0f16894125b72c85ae1226e815fc2ff/AndroidManifest.xml:20:5-44
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		ADDED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/luiz/Documentos/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		ADDED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
+		INJECTED from /media/dados/PROJETOS/ToDo/app/src/main/AndroidManifest.xml
