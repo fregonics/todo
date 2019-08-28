@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">ToDo</string>
+    <string name="main_taskgroup_name" translatable="true">Main</string>
 
+    <!-- DRAWER -->
     <string name="new_taskgroup" translatable="true">New Taskgroup</string>
+    <string name="error_save_new_taskgroup" translatable="true">Not possible to save taskgroup</string>
 
     <!-- ADD NEW TASK ACTIVITY -->
     <string name="task_title" translatable="true">Task title</string>

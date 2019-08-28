@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ToDo</string>
+    <string name="main_taskgroup_name" translatable="true">Principal</string>
+
+    <string name="new_taskgroup" translatable="true">Novo grupo</string>
+    <string name="error_save_new_taskgroup" translatable="true">Não foi possível salvar novo grupop</string>
+
     <string name="task_title">Titulo da tarefa</string>
     <string name="task_description">Descrição da tarefa</string>
     <string name="button_save" translatable="true">Salvar</string>

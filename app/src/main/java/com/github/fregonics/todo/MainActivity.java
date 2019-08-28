@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
             Log.d(MainActivity.class.getSimpleName(), "Storing taskgroups for the first time");
 
             mTaskGroups = new String[1];
-            mTaskGroups[0] = "main";
+            mTaskGroups[0] = getString(R.string.main_taskgroup_name);
 
             try { TaskGroupsManager.storeTaskGroupsNames(getApplicationContext(), mTaskGroups); }
             catch (Exception e1) { Log.d(MainActivity.class.getSimpleName(), e1.getMessage()); }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements ListOfTasksAdapte
                         TaskGroupsManager.storeTaskGroupsNames(getApplicationContext(), mTaskGroups);
                         main.writeToFile(getApplicationContext());
                     } catch (Exception e) {
-                        Log.d(MainActivity.class.getSimpleName(), "impossible to save");
+                        Log.d(MainActivity.class.getSimpleName(), getString(R.string.error_save_new_taskgroup));
                         e.printStackTrace();
                     }
                     startActivity(intent);
